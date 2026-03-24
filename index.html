@@ -6,81 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vehicle Maintenance Records</title>
     <link rel="stylesheet" href="./src/assets/output.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="bg-[#4A3C21]">
-        <div class="navbar bg-base-300 shadow-sm">
-            <div class="navbar-start">
-                <!-- menu mobile start -->
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="-1"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1 mobile</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul class="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul>
+    <div class="navbar bg-base-300 shadow-sm">
+        <div class="navbar-start">
+            <!-- menu mobile start -->
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
                 </div>
-                <!-- menu mobile end -->
-                <a class="btn btn-ghost text-sm">Vehicle Maintenance Records</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1 desktop</a></li>
+                <ul tabindex="-1"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                    <li><a>Item 1 mobile</a></li>
                     <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul class="p-2 bg-base-100 w-40 z-1">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
                     </li>
                     <li><a>Item 3</a></li>
                 </ul>
             </div>
-            <div class="navbar-end hidden lg:flex">
-                <a class="btn btn-ghost text-sm">Login</a>
+            <!-- menu mobile end -->
+            <a class="btn btn-ghost text-sm">Vehicle Maintenance Records</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Item 1 desktop</a></li>
+                <li>
+                    <details>
+                        <summary>Parent</summary>
+                        <ul class="p-2 bg-base-100 w-40 z-1">
+                            <li><a>Submenu 1</a></li>
+                            <li><a>Submenu 2</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a>Item 3</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <a class="btn btn-ghost text-sm">Login</a>
+        </div>
+    </div>
+
+    <!-- hero section    -->
+    <div class="relative w-full h-screen">
+        <!-- Image -->
+        <img src="./src/assets/img/bg.jpg" class="w-full h-full object-cover" />
+
+        <!-- Overlay (optional biar gelap) -->
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <!-- Text -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+            <h1 class="text-5xl font-bold drop-shadow-lg">
+                Manajemen Kendaraan
+            </h1>
+
+            <div class="mt-6 flex gap-4">
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full"><a href=""> Open App</a>
+                </button>
+                <button class="bg-white text-yellow-700 px-6 py-2 rounded-full"><a href="#about"> Discover More</a>
+                </button>
             </div>
         </div>
+    </div>
+    <!-- hero section end -->
 
-        <!-- hero section    -->
-        <div class="relative w-full h-screen">
-            <!-- Image -->
-            <img src="./src/assets/img/bg.jpg" class="w-full h-full object-cover" />
+    <!-- about section  -->
+    <div id="about" class="relative w-full h-screen">
+        <!-- Image -->
+        <img src="./src/assets/img/garage.jpg" class="w-full h-full object-cover" />
 
-            <!-- Overlay (optional biar gelap) -->
-            <div class="absolute inset-0 bg-black/50"></div>
+        <!-- Overlay (optional biar gelap) -->
+        <div class="absolute inset-0 bg-black/50"></div>
 
-            <!-- Text -->
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
-                <h1 class="text-5xl font-bold drop-shadow-lg">
-                    Manajemen Kendaraan
-                </h1>
+        <!-- Text -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+            <h1 class="text-5xl font-bold drop-shadow-lg">
+                Tentang Aplikasi
+            </h1>
 
-                <div class="mt-6 flex gap-4">
-                    <button class="bg-yellow-600 text-white px-6 py-2 rounded-full"><a href=""> Open App</a>
-                    </button>
-                    <button class="bg-white text-yellow-700 px-6 py-2 rounded-full"><a href=""> Discover More</a>
-                    </button>
-                </div>
+            <div class="mt-6 flex gap-4">
+                <p>Aplikasi ini merupakan aplikasi manajemen kendaraan yang memudahkan pengguna dalam mengelola data
+                    kendaraan,
+                    serta mencatat dan mengelola riwayat perawatan kendaraan. Aplikasi ini dirancang dengan antarmuka
+                    yang user
+                    friendly sehingga memudahkan pengguna dalam menggunakan aplikasi ini.</p>
             </div>
+            <button class="bg-white text-yellow-700 mt-10 px-10 py-2 rounded-full"><a href="#contact"> Contact Us</a>
+            </button>
         </div>
-        <!-- hero section end -->
+
     </div>
 </body>
 
